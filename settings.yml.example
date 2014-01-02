@@ -1,6 +1,8 @@
 media_directory: '/home/user/media'
 media_url: 'http://media.domain.com/'
 
+interval: 90
+
 es_config:
     url: 'http://localhost'
     port: '9200'
