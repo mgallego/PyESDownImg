@@ -1,0 +1,28 @@
+media_directory: '/home/user/media'
+media_url: 'http://media.domain.com/'
+
+es_config:
+    url: 'http://localhost'
+    port: '9200'
+
+es_index:
+    - 
+        name: 'cds'
+        doc_type: 
+            -
+                name: 'music'
+                fields:
+                    -
+                        from: remote_cover
+                        to: cover
+                        images:
+                            - 
+                                name: 'thumb'
+                                width: 150
+                                height: 150
+                                quality: 80
+                            - 
+                                name: 'original'
+                                width: 800
+                                height: 600
+                                quality: 80

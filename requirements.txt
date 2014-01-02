@@ -1,0 +1,7 @@
+Pillow==2.3.0
+PyYAML==3.10
+argparse==1.2.1
+image==1.2
+pyes==0.20.1
+urllib3==1.6
+wsgiref==0.1.2
