@@ -31,10 +31,10 @@ def treat_doc_type(index, doc_type):
             directory = doc_id[0:1]+'/'+doc_id[1:2]+'/'+doc_id[2:3]+'/'+doc_id+'/'+field['to']+'/'
             filename = str(counter)+'.jpg'
             image_url = doc[field['from']]
-            images = []
+            images = {}
             for image in field['images']:
                 new_url = treat_image(image_url, image, directory, filename)
-                images.append({image['name']: new_url})
+                images[image['name']]= new_url
             new_document = {field['to']: images }
             reindex(doc_id, index['name'], doc_type['name'], new_document)
 
