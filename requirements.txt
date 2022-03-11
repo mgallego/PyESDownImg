@@ -1,4 +1,4 @@
-Pillow==2.3.0
+Pillow==9.0.1
 PyYAML==3.10
 argparse==1.2.1
 image==1.2
